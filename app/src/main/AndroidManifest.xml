@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+      SPEC §8: sin permisos, receptores de broadcast ni servicios. AndroidX fusiona estos elementos al manifest por
+      su cuenta; se quitan explícitamente. Es seguro: minSdk = 33, y el permiso solo protege receptores
+      dinámicos en Android 12 o anterior; el receptor solo permite disparar por adb la instalación de
+      perfiles base (que igualmente se instalan al arrancar).
+    -->
+    <permission
+        android:name="${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        tools:node="remove" />
+    <uses-permission
+        android:name="${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        tools:node="remove" />
+
+    <application
+        android:name=".BandTrackerApp"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BandTracker">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.BandTracker"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            tools:node="remove" />
+        <!-- Room lo declara para sincronizar la base entre procesos; la app tiene uno solo (SPEC §8: sin servicios). -->
+        <service
+            android:name="androidx.room3.MultiInstanceInvalidationService"
+            tools:node="remove" />
+    </application>
+
+</manifest>

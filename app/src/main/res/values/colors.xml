@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Token color.bg (tema Claro, DESIGN §2). Fondo de la ventana desde el primer fotograma. -->
+    <color name="window_background">#FFFAFAFA</color>
+</resources>

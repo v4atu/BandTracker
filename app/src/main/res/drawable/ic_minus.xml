@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Ícono "minus" de Lucide (licencia ISC; ver docs/licenses/lucide-LICENSE.txt), commit
+  53fab88ff9d1b48f4704b5b5b560d6b4d560bf4c. Geometría tomada del componente "Ícono / minus" de Penpot.
+  El color es solo un marcador: Icon(...) lo tiñe con LocalContentColor / tint.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:pathData="M5,12L19,12"
+        android:strokeColor="#FF000000"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

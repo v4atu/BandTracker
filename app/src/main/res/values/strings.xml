@@ -1,0 +1,96 @@
+<resources>
+    <!-- Idioma por defecto: español (SPEC §6). Los textos de cada pantalla se agregan con su feature. -->
+    <string name="app_name">BandTracker</string>
+    <!-- Título de una fila del historial sin sujeto ni nota (SPEC §5.3). -->
+    <string name="entry_no_subject">Sin sujeto</string>
+    <!-- Captura (SPEC §5.2): descripción del campo de monto para lectores de pantalla. -->
+    <string name="entry_amount">Monto</string>
+    <string name="entry_date">Fecha</string>
+    <string name="entry_today">Hoy</string>
+    <string name="entry_subject">Sujeto</string>
+    <string name="entry_note">Nota</string>
+    <string name="entry_optional">Opcional</string>
+    <!-- Botones de confirmación de la captura (Penpot: «Ingresar» / «Egresar»). -->
+    <string name="entry_save_income">Ingresar</string>
+    <string name="entry_save_expense">Egresar</string>
+    <!-- Edición de un registro (SPEC §5.3, DESIGN §7). -->
+    <string name="entry_edit_title">Editar</string>
+    <string name="entry_save">Guardar</string>
+    <string name="entry_delete">Borrar</string>
+    <string name="entry_delete_title">¿Borrar este registro?</string>
+    <string name="entry_delete_message">Esta acción es definitiva y no se puede deshacer.</string>
+    <!-- Selector de fecha (DESIGN §7). -->
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_accept">Aceptar</string>
+    <string name="date_previous_month">Mes anterior</string>
+    <string name="date_next_month">Mes siguiente</string>
+    <!-- Inicio (SPEC §5.1). «Ingreso guardado» y «Egreso guardado» son propuestas de DESIGN §10. -->
+    <string name="home_income">Ingreso</string>
+    <string name="home_expense">Egreso</string>
+    <string name="home_history">Historial</string>
+    <string name="home_account_add">Cuenta</string>
+    <string name="home_accounts_menu">Cuentas</string>
+    <string name="help">Ayuda</string>
+    <string name="saved_income">Ingreso guardado</string>
+    <string name="saved_expense">Egreso guardado</string>
+    <!-- Importar: por qué se rechaza un archivo (SPEC §7). Siempre se aclara que no se cambió ningún dato. -->
+    <string name="import_error_title">No se pudo importar</string>
+    <string name="import_error_no_changes">No se cambió ningún dato.</string>
+    <string name="import_error_location">Ubicación: %1$s</string>
+    <string name="import_error_not_json">El archivo no es un respaldo válido de BandTracker.</string>
+    <string name="import_error_version">El archivo usa una versión más nueva que la que soporta esta app.</string>
+    <string name="import_error_structure">El archivo está incompleto o tiene un formato inesperado.</string>
+    <string name="import_error_blank">Falta un dato obligatorio en el archivo.</string>
+    <string name="import_error_duplicate_uuid">El archivo repite un identificador.</string>
+    <string name="import_error_unknown_currency">El archivo menciona una moneda desconocida.</string>
+    <string name="import_error_unknown_type">Un registro no es ni ingreso ni egreso.</string>
+    <string name="import_error_non_positive_amount">Un registro tiene un monto que no es mayor que cero.</string>
+    <string name="import_error_bad_date">Un registro tiene una fecha inválida.</string>
+    <string name="import_error_future_date">Un registro tiene una fecha posterior a hoy.</string>
+    <string name="import_error_currency_mismatch">Una cuenta del archivo ya existe aquí con otra moneda.</string>
+    <!-- Cuentas (SPEC §5.4, DESIGN §7). «Ya existe una cuenta con ese nombre» es propuesta de DESIGN §10. -->
+    <string name="account_new_title">Nueva cuenta</string>
+    <string name="account_name_label">Nombre</string>
+    <string name="account_name_placeholder">Ej. Efectivo</string>
+    <string name="account_name_duplicate">Ya existe una cuenta con ese nombre</string>
+    <string name="account_currency_label">Moneda</string>
+    <string name="account_currency_search">Buscar…</string>
+    <string name="account_currency_note">La moneda no se puede cambiar después de crear la cuenta.</string>
+    <string name="account_create">Crear</string>
+    <!-- Diálogos de cuentas e importación (SPEC §5.4, §7; DESIGN §7). Los textos del resumen son propuesta. -->
+    <string name="action_save">Guardar</string>
+    <string name="account_rename_title">Renombrar cuenta</string>
+    <string name="account_delete_title">¿Borrar «%1$s»?</string>
+    <string name="account_delete_message">Se eliminarán también todos sus registros. Esta acción es definitiva y no se puede deshacer.</string>
+    <string name="account_delete_confirm">Borrar cuenta</string>
+    <plurals name="account_delete_count">
+        <item quantity="one">Se perderá %1$d registro</item>
+        <item quantity="other">Se perderán %1$d registros</item>
+    </plurals>
+    <string name="import_done_title">Importación completa</string>
+    <plurals name="import_accounts">
+        <item quantity="one">%1$d cuenta</item>
+        <item quantity="other">%1$d cuentas</item>
+    </plurals>
+    <plurals name="import_entries">
+        <item quantity="one">%1$d registro</item>
+        <item quantity="other">%1$d registros</item>
+    </plurals>
+    <string name="import_done_added">Se agregaron %1$s y %2$s.</string>
+    <string name="import_done_skipped">Ya existían %1$s y %2$s; no se modificaron.</string>
+    <string name="import_done_renamed">«%1$s» se agregó como «%2$s» porque ese nombre ya existía.</string>
+    <string name="import_error_unreadable">No se pudo leer el archivo.</string>
+    <!-- Pantalla de cuentas (SPEC §5.4, DESIGN §7 «5.4 Cuentas»). -->
+    <string name="accounts_title">Cuentas</string>
+    <string name="accounts_export">Exportar</string>
+    <string name="accounts_import">Importar</string>
+    <string name="export_error_title">No se pudo exportar</string>
+    <string name="export_error_message">No se pudo guardar el archivo.</string>
+    <!-- Ayuda (SPEC §5.5, DESIGN §7 «5.5 Ayuda»). La fila «Licencias de terceros» no está en Penpot (decisión de V4atu). -->
+    <string name="help_version">Versión</string>
+    <string name="help_maintainer">Mantenido por</string>
+    <string name="help_license">Licencia</string>
+    <string name="help_repository">Repositorio en GitHub</string>
+    <string name="help_licenses">Licencias de terceros</string>
+    <string name="licenses_title">Licencias</string>
+</resources>

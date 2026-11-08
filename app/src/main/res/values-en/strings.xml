@@ -1,0 +1,96 @@
+<resources>
+    <!-- English (SPEC §6). Must keep the same keys as values/strings.xml. -->
+    <string name="app_name">BandTracker</string>
+    <!-- Title of a history row with neither subject nor note (SPEC §5.3). -->
+    <string name="entry_no_subject">No subject</string>
+    <!-- Capture (SPEC §5.2): amount field description for screen readers. -->
+    <string name="entry_amount">Amount</string>
+    <string name="entry_date">Date</string>
+    <string name="entry_today">Today</string>
+    <string name="entry_subject">Subject</string>
+    <string name="entry_note">Note</string>
+    <string name="entry_optional">Optional</string>
+    <!-- Capture confirmation buttons. -->
+    <string name="entry_save_income">Add income</string>
+    <string name="entry_save_expense">Add expense</string>
+    <!-- Editing an entry (SPEC §5.3, DESIGN §7). -->
+    <string name="entry_edit_title">Edit</string>
+    <string name="entry_save">Save</string>
+    <string name="entry_delete">Delete</string>
+    <string name="entry_delete_title">Delete this entry?</string>
+    <string name="entry_delete_message">This can\'t be undone.</string>
+    <!-- Date picker (DESIGN §7). -->
+    <string name="action_cancel">Cancel</string>
+    <string name="action_accept">OK</string>
+    <string name="date_previous_month">Previous month</string>
+    <string name="date_next_month">Next month</string>
+    <!-- Home (SPEC §5.1). -->
+    <string name="home_income">Income</string>
+    <string name="home_expense">Expense</string>
+    <string name="home_history">History</string>
+    <string name="home_account_add">Account</string>
+    <string name="home_accounts_menu">Accounts</string>
+    <string name="help">Help</string>
+    <string name="saved_income">Income saved</string>
+    <string name="saved_expense">Expense saved</string>
+    <!-- Import: why a file is rejected (SPEC §7). It always says that no data was changed. -->
+    <string name="import_error_title">Couldn\'t import</string>
+    <string name="import_error_no_changes">No data was changed.</string>
+    <string name="import_error_location">Location: %1$s</string>
+    <string name="import_error_not_json">The file is not a valid BandTracker backup.</string>
+    <string name="import_error_version">The file uses a newer version than this app supports.</string>
+    <string name="import_error_structure">The file is incomplete or has an unexpected format.</string>
+    <string name="import_error_blank">A required value is missing from the file.</string>
+    <string name="import_error_duplicate_uuid">The file repeats an identifier.</string>
+    <string name="import_error_unknown_currency">The file mentions an unknown currency.</string>
+    <string name="import_error_unknown_type">An entry is neither income nor expense.</string>
+    <string name="import_error_non_positive_amount">An entry has an amount that is not greater than zero.</string>
+    <string name="import_error_bad_date">An entry has an invalid date.</string>
+    <string name="import_error_future_date">An entry has a date after today.</string>
+    <string name="import_error_currency_mismatch">An account in the file already exists here with a different currency.</string>
+    <!-- Accounts (SPEC §5.4, DESIGN §7). -->
+    <string name="account_new_title">New account</string>
+    <string name="account_name_label">Name</string>
+    <string name="account_name_placeholder">E.g. Cash</string>
+    <string name="account_name_duplicate">An account with that name already exists</string>
+    <string name="account_currency_label">Currency</string>
+    <string name="account_currency_search">Search…</string>
+    <string name="account_currency_note">The currency can\'t be changed after the account is created.</string>
+    <string name="account_create">Create</string>
+    <!-- Account and import dialogs (SPEC §5.4, §7; DESIGN §7). The summary texts are a proposal. -->
+    <string name="action_save">Save</string>
+    <string name="account_rename_title">Rename account</string>
+    <string name="account_delete_title">Delete “%1$s”?</string>
+    <string name="account_delete_message">This will also delete all its entries. This can\'t be undone.</string>
+    <string name="account_delete_confirm">Delete account</string>
+    <plurals name="account_delete_count">
+        <item quantity="one">%1$d entry will be lost</item>
+        <item quantity="other">%1$d entries will be lost</item>
+    </plurals>
+    <string name="import_done_title">Import complete</string>
+    <plurals name="import_accounts">
+        <item quantity="one">%1$d account</item>
+        <item quantity="other">%1$d accounts</item>
+    </plurals>
+    <plurals name="import_entries">
+        <item quantity="one">%1$d entry</item>
+        <item quantity="other">%1$d entries</item>
+    </plurals>
+    <string name="import_done_added">Added %1$s and %2$s.</string>
+    <string name="import_done_skipped">%1$s and %2$s already existed and were left unchanged.</string>
+    <string name="import_done_renamed">“%1$s” was added as “%2$s” because that name already existed.</string>
+    <string name="import_error_unreadable">The file couldn\'t be read.</string>
+    <!-- Accounts screen (SPEC §5.4, DESIGN §7). -->
+    <string name="accounts_title">Accounts</string>
+    <string name="accounts_export">Export</string>
+    <string name="accounts_import">Import</string>
+    <string name="export_error_title">Couldn\'t export</string>
+    <string name="export_error_message">The file couldn\'t be saved.</string>
+    <!-- Help (SPEC §5.5, DESIGN §7). The "Third-party licenses" row is not in Penpot (V4atu decision). -->
+    <string name="help_version">Version</string>
+    <string name="help_maintainer">Maintained by</string>
+    <string name="help_license">License</string>
+    <string name="help_repository">GitHub repository</string>
+    <string name="help_licenses">Third-party licenses</string>
+    <string name="licenses_title">Licenses</string>
+</resources>
